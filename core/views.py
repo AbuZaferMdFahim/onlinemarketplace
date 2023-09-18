@@ -22,5 +22,4 @@ def SignUp(request):
             return redirect('/login/')
     else:
         form = SignUpForm()
-    form = SignUpForm()
     return render(request,'core/signup.html',{'form':form})
